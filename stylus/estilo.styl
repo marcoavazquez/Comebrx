@@ -1,0 +1,202 @@
+@import "normalize.styl"
+
+azul = #009cff
+negro = #333333
+gris = #F5F5F5
+
+body
+    color negro
+    font-size 16px
+    line-height 1.4em
+a
+    text-decoration none
+
+.cuerpo
+    width 100%
+    max-width 75em
+
+.menu-p
+    display none
+
+.barra
+    border-bottom 1px solid gray
+    width 100%
+
+.ico-menu
+    margin 1em
+    width 2em
+
+.form-busqueda
+    border 1px solid gray
+    border-radius 0.4em
+    float right
+    margin 1em
+    padding 0px
+    padding-left 0.5em
+    width 62%
+
+.btn-submit
+    background white
+    border none
+    padding-right 0px
+
+.campo-busqueda
+    background white
+    border none
+    height 1.5em
+    width 75%
+//################################################//
+.inline
+    display inline-block
+
+.s-logo
+    img
+        width 100%
+
+.slider
+    img
+        width 100%
+//###############################################//
+.menu-productos
+    background azul
+    border-bottom 1px solid gray
+    color white
+    width 100%
+    img
+        margin 1em
+        width 2em
+
+.titulo-menu-prod
+    font-weight bold
+    bottom 1.5em
+    margin 0px auto
+    position relative
+
+.menu-marcas
+    background gray
+    height 4em
+    line-height 1em
+
+.marcas
+    list-style none
+    width 100%
+    margin 0px
+    padding 0px
+    text-align center
+
+.item-marcas
+    display inline-block
+    width 23%
+    padding 0.8em 0em
+    a
+        color white
+        &:hover
+            font-weight bold
+//##################################################//
+h3
+    font-size 1em
+    margin 0px
+
+.productos
+    width 100%
+
+.producto
+    border-bottom 1px solid gray
+    padding-bottom 1em
+    padding-top 1em
+    width 100%
+    &:nth-child(even)
+        background gris
+    img
+        display inline-block
+        width 25%
+
+.descripcion
+    position relative
+    width 70%
+//##################################################//
+.videos
+    background negro
+    color white
+    padding-bottom 1em
+    padding-top 1em
+    text-align center
+
+.reproductor
+    height auto
+    padding-top 1em
+    iframe
+        width 100%
+        height 18em
+.l-video
+    display inline-block
+    list-style none
+    margin 0px
+    padding 0px
+    width 100%
+
+.item-video
+    display inline-block
+    font-size 0.6em
+    width 32%
+
+    img
+        width 100%
+
+//###################################################3//
+.contacto
+    background azul
+    color white
+    padding-top 1em
+    padding-bottom 1em
+    text-align center
+    strong
+        padding-bottom 1em
+
+footer
+    color azul
+    font-size 0.8em
+    text-align center
+//##################################-768px-###################
+@media screen and (min-width 768px)
+
+    .ico-menu
+        display none
+
+    .form-busqueda
+        border-radius 0.5em
+        padding-left 0.8em
+        width 12em
+
+    .campo-busqueda
+        height 2em
+
+    .menu-p
+        display block
+        list-style none
+
+    .item-menu
+        display inline-block
+        padding 0.4em
+        a
+            color black
+
+    //################################################//
+    h3
+        font-size 1.2em
+
+    .producto
+        background gris
+        border none
+        border-radius 0.5em
+        display inline-block
+        margin 0.5em
+        padding 0.5em
+        width 45%
+
+        img
+            display inline-block
+            width 25%
+
+    .descripcion
+        width 70%
