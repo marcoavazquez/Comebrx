@@ -5,38 +5,43 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <title>Comebrixa Comercializadora S.A. de C.V.</title>
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
     <header>
+        <div class="cont-barra">
         <div class="barra inline">
         <nav class="menu inline">
-            <ul class="menu-p">
+            <img src="images/menu.png" class="ico-menu" onclick="mostrar('menu-p')">
+            <ul class="menu-p" id="menu-p">
                 <li class="item-menu"><a href="#">Inicio</a></li>
-                <li class="item-menu"><a href="#">Productos</a></li>
+                <li class="item-menu"><a href="#productos">Productos</a></li>
                 <li class="item-menu"><a href="#contacto">Contacto</a></li>
                 <li class="item-menu"><a href="#">Galería</a></li>
-                <li class="item-menu"><a href="#"></a>Correo</li>
+                <li class="item-menu"><a href="#">Correo</a></li>
                 <li class="item-menu"><a href="#">Nosotros</a></li>
             </ul>
-            <img src="images/menu.png" class="ico-menu">
         </nav>
         <form class="form-busqueda inline">
             <input type="text" class="campo-busqueda" placeholder="Buscar">
             <input type="submit" value="  Q " class="btn-submit">
         </form>
         </div>
-        <div class="s-logo">
-            <img src="images/logo.png">
         </div>
-        <div class="slider">
-            <img src="images/861.jpg">
+        <div class="s-logo">
+            <img src="images/logo.png" alt="Comebrixa, Comercializadora S.A. de C.V.">
         </div>
     </header>
+
+        <div class="slider">
+         <img src="" id="slide">
+        </div>
     <section class="cuerpo">
         <div class="menu-productos">
-            <img src="images/menu-b.png" class="inline">
+            <img src="images/menu-b.png" class="inline" onclick="mostrar('menu-productos')">
             <span class="titulo-menu-prod">Productos</span>
         </div>
+
         <div class="menu-marcas">
             <ul class="marcas">
                 <li class="item-marcas"><a href="#">Alvic<br></a></li>
@@ -45,18 +50,53 @@
                 <li class="item-marcas"><a href="#">Quantium<br></a></li>
             </ul>
         </div>
-        <div class="productos">
+
+
+
+        <div class="lista-productos" id="menu-productos">
+                <ul>
+                    <li class="item-list-prod">Aires Acondicionados</li>
+                    <li class="item-list-prod">Bulb</li>
+                    <li class="item-list-prod">Dispensarios</li>
+                    <li class="item-list-prod">Gabinete</li>
+                    <li class="item-list-prod">Gas Station - & Canopy Lamp</li>
+                    <li class="item-list-prod">
+                        Industrial Power High Bay, Wall & Flood Lamp</li>
+                    <li class="item-list-prod">Inversor de Corriente</li>
+                    <li class="item-list-prod">Matainsectos</li>
+                    <li class="item-list-prod">Ozonizadores</li>
+                    <li class="item-list-prod">Ozonizadores de agua</li>
+                    <li class="item-list-prod">Optimizador de Energía</li>
+                    <li class="item-list-prod">Panel</li>
+                    <li class="item-list-prod">Paneles Solares</li>
+                    <li class="item-list-prod">Park & Parking Lamp</li>
+                    <li class="item-list-prod">Projector., Wall & Flood Lamp
+                    <li class="item-list-prod">Street Lamp</li>
+                    <li class="item-list-prod">Spot</li>
+                    <li class="item-list-prod">Terminal punto de venta</li>
+                    <li class="item-list-prod">Tube</li>
+                </ul>
+        </div>
+
+        <div class="productos inline" id="productos">
             <div class="producto">
                 <h3>Este es un Producto</h3>
                 <div class="descripcion inline">
                     Esta es la descripción del producto, algo breve pero
-                    informativo. Esta es la descripción del producto, algo breve pero
                     informativo.
                 </div>
                 <img src="images/images.jpg">
             </div>
             <div class="producto">
-                <h3>Este es un Producto con muchas palabras aqui</h3>
+                <h3>Este es un Producto</h3>
+                <div class="descripcion inline">
+                    Esta es la descripción del producto, algo breve pero
+                    informativo
+                </div>
+                <img src="images/images.jpg">
+            </div>
+            <div class="producto">
+                <h3>Este es un Producto</h3>
                 <div class="descripcion inline">
                     Esta es la descripción del producto, algo breve pero
                     informativo
@@ -79,36 +119,72 @@
                 </div>
                 <img src="images/images.jpg">
             </div>
+            <div class="producto">
+                <h3>Este es un Producto</h3>
+                <div class="descripcion inline">
+                    Esta es la descripción del producto, algo breve pero
+                    informativo
+                </div>
+                <img src="images/images.jpg">
+            </div>
+            <div class="producto">
+                <h3>Este es un Producto</h3>
+                <div class="descripcion inline">
+                    Esta es la descripción del producto, algo breve pero
+                    informativo
+                </div>
+                <img src="images/images.jpg">
+            </div>
+            <div class="producto">
+                <h3>Este es un Producto</h3>
+                <div class="descripcion inline">
+                    Esta es la descripción del producto, algo breve pero
+                    informativo
+                </div>
+                <img src="images/images.jpg">
+            </div>
+            <div class="producto">
+                <h3>Este es un Producto</h3>
+                <div class="descripcion inline">
+                    Esta es la descripción del producto, algo breve pero
+                    informativo
+                </div>
+                <img src="images/images.jpg">
+            </div>
+
         </div>
+    </section>
+
 
         <div class="videos">
         <strong>Videos de productos</strong>
+        <p>
             <div class="reproductor">
-                <iframe src="http://www.youtube.com/embed/UWqfoNbe7Ns?feature=oembed&amp;amp;wmode=opaque" allowfullscreen=""></iframe>
+                <iframe src="http://www.youtube.com/embed/UWqfoNbe7Ns?feature=oembed&amp;amp;wmode=opaque" allowfullscreen="" id="iframe-video"></iframe>
             </div>
             <div class="lista-videos">
                 <ul class="l-video">
-                    <li class="item-video"><img src="images/youtube.jpg">
-                        Titulo Video
+                    <li class="item-video"><img src="images/video-min.jpg" onclick="mostrar_video(1)">
+
                     </li>
-                    <li class="item-video"><img src="images/youtube.jpg">
-                        Titulo Video
+                    <li class="item-video"><img src="images/video-min2.jpg" onclick="mostrar_video(2)">
+
                     </li>
-                    <li class="item-video"><img src="images/youtube.jpg">
-                        Titulo Video
+                    <li class="item-video" onclick="mostrar_video(3)">
                     </li>
                 </ul>
             </div>
+        </p>
         </div>
 
         <div class="contacto" id="contacto">
-        <strong>Contacto</strong>
+        <h4>Contacto</h4>
             <p>
                 <strong>Dirección Administrativa</strong><br><br>
                 Teléfono Oficina: (228) 237 1310<br>
                 Nextel: (228) 205 2458<br>
                 ID: 92*15*9991<br><br>
-                Correo electrónico: carolina@comebrixa.com.mx,
+                Correo electrónico: <br>carolina@comebrixa.com.mx,
                 comebrixa@yahoo.com
             </p>
             <p>
@@ -119,7 +195,20 @@
         <footer>
             Comercializadora Comebrixa &copy 2015
         </footer>
+        <div class="chat">
+            <div class="titulo-chat" onclick="mostrar('cont-chat')">
+                ¿Te ayudamos?
+            </div>
+            <div class="cont-chat" id="cont-chat">
+            <div class="conver-chat">
 
-    </section>
+            </div>
+            <div class="text-chat">
+                <input type="text" placeholder="Mensaje" class="campo-chat">
+                <button class="btn-chat"> Enviar</button>
+            </div>
+            </div>
+        </div>
+
 </body>
 </html>
