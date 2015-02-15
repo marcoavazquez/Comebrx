@@ -1,24 +1,35 @@
 @import "normalize.styl"
 
-azul = #009cff
+//##-Tema 1-##// 
+a-menu-pric-768 = white
+azul = rgb(42,110,176)
+back-barra = azul
+back-header = rgb(230,230,230)
+back-productos1 = rgb(250,250,250)
+back-productos2 = rgb(240,240,240)
+blanco = rgb(254,254,254)
+fondo = rgb(73,77,84)
+gris = rgb(33,33,33)
+letra = #333333
+letra-menu-prod = blanco
 negro = #333333
-gris = #F5F5F5
 
 body
-    background gris
-    color negro
+    background fondo
+    color letra
     font-size 16px
     line-height 1.4em
 a
     text-decoration none
 
 header
+    background back-header
     width 100%
 h4
     font-size 1.4em
 
 .cont-barra
-    background white
+    background back-barra
     border-bottom 1px solid gray
     width 100%
 
@@ -32,7 +43,7 @@ h4
 
 .menu-p
     font-size 1.2em
-    background white
+    background blanco
     border-radius 0.2em
     display initial
     margin 0px
@@ -62,8 +73,10 @@ h4
     width 1.6em
 
 .form-busqueda
+    background blanco
     border 1px solid gray
     border-radius 0.4em
+    color letra
     float right
     margin 1em
     padding 0px
@@ -71,12 +84,12 @@ h4
     width 62%
 
 .btn-submit
-    background white
+    background blanco
     border none
     padding-right 0px
 
 .campo-busqueda
-    background white
+    background blanco
     border none
     height 1.5em
     width 75%
@@ -89,9 +102,8 @@ h4
         width 100%
 
 .slider
-    background white
+    background blanco
     border-bottom 0.5em solid gray
-    margin-bottom 2em
     text-align center
     img
         max-width 75em
@@ -100,20 +112,20 @@ h4
 .menu-productos
     background azul
     border-bottom 1px solid gray
-    color white
+    color letra-menu-prod
     width 100%
     img
         margin 1em
         width 2em
 
 .lista-productos
-    background #F0F0FF
     display inline-block
     margin 0px
     padding-right 2em
     padding-top 1em
     width 16em
     ul
+        background #F0F0FF
         list-style none
         margin 0px
 
@@ -136,7 +148,7 @@ h4
     position relative
 
 .menu-marcas
-    background gray
+    background letra
     height 4em
     line-height 1em
 
@@ -150,9 +162,9 @@ h4
 .item-marcas
     display inline-block
     width 23%
-    padding 0.8em 0em
+    padding 1.5em 0em
     a
-        color white
+        color letra-menu-prod
         &:hover
             font-weight bold
 //##################################################//
@@ -164,12 +176,13 @@ h3
     width 100%
 
 .producto
+    background back-productos1
     border-bottom 1px solid gray
     padding-bottom 1em
     padding-top 1em
     width 100%
     &:nth-child(even)
-        background gris
+        background back-productos2
     img
         display inline-block
         width 25%
@@ -181,7 +194,7 @@ h3
 .videos
     background negro
     border-bottom 0.5em solid gray
-    color white
+    color blanco
     padding-bottom 1em
     padding-top 1em
     text-align center
@@ -213,7 +226,7 @@ h3
 //###################################################3//
 .contacto
     background azul
-    color white
+    color blanco
     font-size 1.2em
     padding-top 0.6em
     padding-bottom 1em
@@ -221,7 +234,7 @@ h3
 
 footer
     color azul
-    background white
+    background blanco
     font-size 0.8em
     text-align center
 
@@ -236,7 +249,7 @@ footer
 
 .titulo-chat
     background azul
-    color white
+    color blanco
     font-size 0.8em
     font-weight bold
     height 2em
@@ -245,17 +258,17 @@ footer
         cursor pointer
 
 .conver-chat
-    background white
+    background blanco
     border-bottom 1px solid gris
     height 15em
 
 .text-chat
-    background white
+    background blanco
     font-size 0.8em
     height 4em
 
 .campo-chat
-    background white
+    background blanco
     border 1px solid gray
     border-radius 0.2em
     height 3em
@@ -264,7 +277,7 @@ footer
     width 12em
 
 .btn-chat
-    color white
+    color blanco
     background azul
     border 1px solid gray
     border-radius 0.2em
@@ -303,8 +316,6 @@ footer
     .item-menu
         &:hover
             background none
-        a
-            color negro
 
     .form-busqueda
         border-radius 0.5em
@@ -318,22 +329,22 @@ footer
         display inline-block
         padding 0.4em
         a
-            color black
+            color a-menu-pric-768
 
     //################################################//
     h3
         font-size 1.2em
 
     .producto
-        background white
+        background back-productos1
         border none
         border-radius 0.5em
         display inline-block
         margin 0.5em
-        padding 0.5em
-        width 45%
+        padding 1em
+        width 40%
         &:nth-child(even)
-            background white
+            background back-productos1
 
         img
             display inline-block
@@ -350,6 +361,9 @@ footer
             height 28em
 //###################################960px##############
 @media screen and (min-width 960px)
+
+    .slider
+        margin-bottom 2em
 
     .menu-productos
         text-align center
@@ -378,8 +392,7 @@ footer
         padding 1.2em 0em 1.2em 0em
         width 9em
         &:hover
-            background #009AfA
-            font-weight normal
+            background #0090f0
             cursor pointer
 
     .lista-productos
@@ -413,7 +426,8 @@ footer
 
     .producto
         height 10em
-        width 44%
+        padding 1em
+        width 40%
 
         img
             display inline-block
@@ -454,6 +468,6 @@ footer
         text-align left
 
     .cont-contacto
-        border-left 1px solid gris
+        border-left 1px solid white
         margin-left 18%
         padding 0em 0em 0em 2em
